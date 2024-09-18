@@ -1,6 +1,8 @@
 # BINF7000-AS2-ML-Model
 
-## Data
+## Ranmdon Forest in DNA_meth
+
+### Data
 
 My file structure:
 
