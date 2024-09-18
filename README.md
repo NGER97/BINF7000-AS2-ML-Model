@@ -14,14 +14,14 @@ My file structure:
 
 ### Workflow
 
-Data Loading and Preprocessing: The code reads data from a CSV file, handles missing values, and ensures numeric features are ready for training.
-Feature and Label Extraction: It extracts the CpG sites as features and the target labels, mapping them into numeric values for classification.
-Train-Test Split: The dataset is split into training and testing sets to evaluate the model's performance later.
-Hyperparameter Optimization: A grid search is used to find the best hyperparameters for the random forest model through cross-validation.
-Feature Importance Analysis: After training, the feature importances are extracted and analyzed to identify the most influential CpG sites.
-Visualization: The top 10 most important features are visualized using a bar chart for better interpretation.
-Prediction and Evaluation: The trained model is tested on the unseen data (test set), and performance metrics are printed.
-Model Saving: The trained model is saved to a file for future use or deployment.
+- Data Loading and Preprocessing: The code reads data from a CSV file, handles missing values, and ensures numeric features are ready for training.
+- Feature and Label Extraction: It extracts the CpG sites as features and the target labels, mapping them into numeric values for classification.
+- Train-Test Split: The dataset is split into training and testing sets to evaluate the model's performance later.
+- Hyperparameter Optimization: A grid search is used to find the best hyperparameters for the random forest model through cross-validation.
+- Feature Importance Analysis: After training, the feature importances are extracted and analyzed to identify the most influential CpG sites.
+- Visualization: The top 10 most important features are visualized using a bar chart for better interpretation.
+- Prediction and Evaluation: The trained model is tested on the unseen data (test set), and performance metrics are printed.
+- Model Saving: The trained model is saved to a file for future use or deployment.
 
 ### Results
 
