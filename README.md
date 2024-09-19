@@ -1,8 +1,6 @@
 # BINF7000-AS2-ML-Model
 
-## Ranmdon Forest in DNA_meth
-
-### Data
+## Data
 
 My file structure:
 
@@ -11,10 +9,12 @@ My file structure:
 ├── G12_breast_gene-expr.csv
 ├── README.md
 ├── dna_meth_rf.py
+├── dna_meth_lr.py
+├── logistic_regression_model.pkl
 └── random_forest_model.pkl
 ```
 
-### Workflow
+## Workflow
 
 - Data Loading and Preprocessing: The code reads data from a CSV file, handles missing values, and ensures numeric features are ready for training.
 - Feature and Label Extraction: It extracts the CpG sites as features and the target labels, mapping them into numeric values for classification.
@@ -25,7 +25,7 @@ My file structure:
 - Prediction and Evaluation: The trained model is tested on the unseen data (test set), and performance metrics are printed.
 - Model Saving: The trained model is saved to a file for future use or deployment.
 
-### Results
+## Ranmdon Forest in DNA_meth
 
 ```
 Best parameters: {'max_depth': None, 'max_features': 'log2', 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 200}
@@ -58,7 +58,25 @@ Classification Report:
 weighted avg       0.99      0.99      0.99       176
 ```
 
-### TODO
+## Logistic Regression in DNA_meth
+
+```
+Best parameters found: {'C': 1, 'class_weight': 'balanced', 'penalty': 'l1'}
+```
+
+```
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.99      1.00       160
+           1       0.94      1.00      0.97        16
+
+    accuracy                           0.99       176
+   macro avg       0.97      1.00      0.98       176
+weighted avg       0.99      0.99      0.99       176
+```
+
+## TODO
 
 - Further optimization of hyperparameter optimization
 - I have tried to use the method of balancing data categories, but the trained model is not ideal and I have not found a better solution.
