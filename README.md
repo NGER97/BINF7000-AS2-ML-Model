@@ -10,7 +10,9 @@ My file structure:
 ├── README.md
 ├── dna_meth_rf.py
 ├── dna_meth_lr.py
+├── dna_meth_fnn.py
 ├── logistic_regression_model.pkl
+├── ffnn_model.keras
 └── random_forest_model.pkl
 ```
 
@@ -74,6 +76,25 @@ Classification Report:
     accuracy                           0.99       176
    macro avg       0.97      1.00      0.98       176
 weighted avg       0.99      0.99      0.99       176
+```
+
+## Feedforward Neural Network in DNA_meth
+
+```
+Epoch 50/50
+18/18 ━━━━━━━━━━━━━━━━━━━━ 0s 5ms/step - accuracy: 1.0000 - loss: 4.5866e-06 - val_accuracy: 0.9929 - val_loss: 0.0684
+```
+
+```
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.97      0.98       160
+           1       0.76      1.00      0.86        16
+
+    accuracy                           0.97       176
+   macro avg       0.88      0.98      0.92       176
+weighted avg       0.98      0.97      0.97       176
 ```
 
 ## TODO
